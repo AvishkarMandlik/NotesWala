@@ -4,7 +4,7 @@ const PdfSchema = new Schema({
   title: String,
   description: String,
   pdfUrl: String,
-  year: Number,
+  year: String,
   faculty: String
 })
 
