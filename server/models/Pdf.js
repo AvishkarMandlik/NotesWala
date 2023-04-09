@@ -1,6 +1,6 @@
 import {Schema, model} from 'mongoose';
 
-const PdfSchema = new Schema({
+const pdfSchema = new Schema({
   title: String,
   description: String,
   pdfUrl: String,
@@ -8,6 +8,6 @@ const PdfSchema = new Schema({
   faculty: String
 })
 
-const Pdf = model("Pdf", PdfSchema)
+const Pdf = model("Pdf", pdfSchema)
 
-export default PdfSchema
+export default Pdf

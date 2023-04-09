@@ -5,7 +5,7 @@ dotenv.config();
 
 
 import User from './models/User.js';
-
+import Pdf from './models/Pdf.js';
 
 const app = express();
 app.use(express.json());
@@ -108,6 +108,30 @@ app.post('/login', async (req, res) => {
     }
 })
 //  login api ends here
+
+
+// CRUD Operation starts here...
+// Create or ADD PDF api starts here
+app.post("/createPdf", async(req,res)=>{
+    const {title, description,pdfUrl,year,faculty} = req.body;
+    
+    const pdfs = new Pdf({
+        title: title,
+        description: description,
+        pdfUrl: pdfUrl,
+        year: year,
+        faculty: faculty
+    })
+
+    const savedPdf = await pdfs.save();
+
+    res.json({
+        success: true,
+        message: "PDF added successfully",
+        data: savedPdf
+    })
+})
+// Create or ADD PDF api ends here
 
 
 
