@@ -119,6 +119,7 @@ app.post("/createPdf", async(req,res)=>{
         title: title,
         description: description,
         pdfUrl: pdfUrl,
+        imgUrl: imgUrl,
         year: year,
         faculty: faculty
     })
