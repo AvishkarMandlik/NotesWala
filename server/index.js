@@ -134,6 +134,21 @@ app.post("/createPdf", async(req,res)=>{
 })
 // Create or ADD PDF api ends here
 
+// Pdfs Search by title
+// http://localhost:5000/pdfsbytitle?title=Operating System
+app.get("/pdfsbytitle", async(req, res)=>{
+    const {title} = req.query;
+
+    const pdfs = await Pdf.find({
+        title: {$regex: title, $options: 'i'}
+    })
+
+    res.json({
+        success: true,
+        message: "pdfs fetched successfully",
+        data: pdfs
+    })
+})
 
 
 // api routes ends here
