@@ -113,7 +113,7 @@ app.post('/login', async (req, res) => {
 // CRUD Operation starts here...
 // Create or ADD PDF api starts here
 app.post("/createPdf", async(req,res)=>{
-    const {title, description,pdfUrl,year,faculty} = req.body;
+    const {title, description,pdfUrl,imgUrl,year,faculty} = req.body;
     
     const pdfs = new Pdf({
         title: title,
@@ -148,6 +148,22 @@ app.get("/pdfsbytitle", async(req, res)=>{
         message: "pdfs fetched successfully",
         data: pdfs
     })
+})
+
+// Food item Search by category
+// http://localhost:5000/pdfsbyyear?year=Third-Year
+app.get("/pdfsbyyear", async(req, res)=>{
+    const {year} = req.query;
+  
+    const pdfs = await Pdf.find({
+        year: {$regex: year, $options: 'i'}
+    })
+  
+      res.json({
+          success: true,
+          message: "pdfs fetched successfully",
+          data: pdfs
+      })
 })
 
 
