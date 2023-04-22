@@ -10,6 +10,6 @@ const pdfSchema = new Schema({
   faculty: String
 })
 
-const Pdf = model("Pdf", pdfSchema)
+const TyPdf = model("tyPdf", pdfSchema)
 
-export default Pdf
+export default TyPdf
