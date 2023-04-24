@@ -5,7 +5,8 @@ dotenv.config();
 
 
 import User from './models/User.js';
-import Pdf from './models/Pdf.js';
+import TyPdf from './models/TyPdf.js';
+import SyPdf from './models/SyPdf.js';
 
 const app = express();
 app.use(express.json());
@@ -112,10 +113,10 @@ app.post('/login', async (req, res) => {
 
 // CRUD Operation starts here...
 // Create or ADD PDF api starts here
-app.post("/createPdf", async(req,res)=>{
+app.post("/createTyPdf", async(req,res)=>{
     const {title, description,pdfUrl,imgUrl,year,faculty} = req.body;
     
-    const pdfs = new Pdf({
+    const tyPdfs = new TyPdf({
         title: title,
         description: description,
         pdfUrl: pdfUrl,
@@ -124,7 +125,7 @@ app.post("/createPdf", async(req,res)=>{
         faculty: faculty
     })
 
-    const savedPdf = await pdfs.save();
+    const savedPdf = await tyPdfs.save();
 
     res.json({
         success: true,
@@ -134,19 +135,65 @@ app.post("/createPdf", async(req,res)=>{
 })
 // Create or ADD PDF api ends here
 
+app.post("/createSyPdf", async(req,res)=>{
+    const {title, description,pdfUrl,imgUrl,year,faculty} = req.body;
+    
+    const syPdfs = new SyPdf({
+        title: title,
+        description: description,
+        pdfUrl: pdfUrl,
+        imgUrl: imgUrl,
+        year: year,
+        faculty: faculty
+    })
+
+    const savedPdf = await syPdfs.save();
+
+    res.json({
+        success: true,
+        message: "PDF added successfully",
+        data: savedPdf
+    })
+})
+// All Sy Pdfs fetching api starts here
+
+app.get("/SyallPdfs", async(req, res)=>{
+    const syPdfs = await SyPdf.find()
+
+    res.json({
+        success: true,
+        message: "Pdf Items fetched successfully",
+        data: syPdfs
+    })
+})
+// All Sy Pdfs fetching api ends here
+
+
+// All Ty Pdfs fetching api starts here
+app.get("/TyallPdfs", async(req, res)=>{
+    const tyPdfs = await TyPdf.find()
+
+    res.json({
+        success: true,
+        message: "Pdf Items fetched successfully",
+        data: tyPdfs
+    })
+})
+// All Ty Pdfs fetching api ends here
+
 // Pdfs Search by title
 // http://localhost:5000/pdfsbytitle?title=Operating System
 app.get("/pdfsbytitle", async(req, res)=>{
     const {title} = req.query;
 
-    const pdfs = await Pdf.find({
+    const tyPdfs = await TyPdf.find({
         title: {$regex: title, $options: 'i'}
     })
 
     res.json({
         success: true,
         message: "pdfs fetched successfully",
-        data: pdfs
+        data: tyPdfs
     })
 })
 
@@ -155,14 +202,14 @@ app.get("/pdfsbytitle", async(req, res)=>{
 app.get("/pdfsbyyear", async(req, res)=>{
     const {year} = req.query;
   
-    const pdfs = await Pdf.find({
+    const tyPdfs = await TyPdf.find({
         year: {$regex: year, $options: 'i'}
     })
   
       res.json({
           success: true,
           message: "pdfs fetched successfully",
-          data: pdfs
+          data: tyPdfs
       })
 })
 
