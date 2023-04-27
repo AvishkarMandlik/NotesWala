@@ -21,7 +21,7 @@ function Login() {
             password: password,
         })
         console.log(response.data)
-        if (response.data.message) {
+        if (response.data.success) {
             await swal({
                 title: "Success",
                 text: response.data.message,
@@ -35,11 +35,12 @@ function Login() {
             await swal({
                 title: "Error",
                 text: response.data.message,
-                icon: "Error",
+                icon: "error",
                 button: "Try Again!",
               });
             setEmail("")
             setPassword("")
+            localStorage.removeItem('currentUser');
         }
     }
 
