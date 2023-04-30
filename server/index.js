@@ -7,6 +7,7 @@ dotenv.config();
 import User from './models/User.js';
 import TyPdf from './models/TyPdf.js';
 import SyPdf from './models/SyPdf.js';
+import FyPdf from './models/FyPdf.js';
 
 const app = express();
 app.use(express.json());
@@ -133,7 +134,7 @@ app.post("/createTyPdf", async(req,res)=>{
         data: savedPdf
     })
 })
-// Create or ADD PDF api ends here
+
 
 app.post("/createSyPdf", async(req,res)=>{
     const {title, description,pdfUrl,imgUrl,year,faculty} = req.body;
@@ -155,8 +156,33 @@ app.post("/createSyPdf", async(req,res)=>{
         data: savedPdf
     })
 })
-// All Sy Pdfs fetching api starts here
 
+
+app.post("/createFyPdf", async(req,res)=>{
+    const {title, description,pdfUrl,imgUrl,year,faculty} = req.body;
+    
+    const fyPdfs = new FyPdf({
+        title: title,
+        description: description,
+        pdfUrl: pdfUrl,
+        imgUrl: imgUrl,
+        year: year,
+        faculty: faculty
+    })
+
+    const savedPdf = await fyPdfs.save();
+
+    res.json({
+        success: true,
+        message: "PDF added successfully",
+        data: savedPdf
+    })
+})
+// Create or ADD PDF api ends here
+
+
+
+// All Sy Pdfs fetching api starts here
 app.get("/SyallPdfs", async(req, res)=>{
     const syPdfs = await SyPdf.find()
 
