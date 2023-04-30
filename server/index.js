@@ -180,7 +180,17 @@ app.post("/createFyPdf", async(req,res)=>{
 })
 // Create or ADD PDF api ends here
 
+// All Fy Pdfs fetching api starts here
+app.get("/FyallPdfs", async(req, res)=>{
+    const fyPdfs = await FyPdf.find()
 
+    res.json({
+        success: true,
+        message: "Pdf Items fetched successfully",
+        data: fyPdfs
+    })
+})
+// All Fy Pdfs fetching api ends here
 
 // All Sy Pdfs fetching api starts here
 app.get("/SyallPdfs", async(req, res)=>{
@@ -194,7 +204,6 @@ app.get("/SyallPdfs", async(req, res)=>{
 })
 // All Sy Pdfs fetching api ends here
 
-
 // All Ty Pdfs fetching api starts here
 app.get("/TyallPdfs", async(req, res)=>{
     const tyPdfs = await TyPdf.find()
@@ -206,6 +215,7 @@ app.get("/TyallPdfs", async(req, res)=>{
     })
 })
 // All Ty Pdfs fetching api ends here
+
 
 // Pdfs Search by title
 // http://localhost:5000/pdfsbytitle?title=Operating System
