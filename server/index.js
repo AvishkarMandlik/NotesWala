@@ -219,7 +219,35 @@ app.get("/TyallPdfs", async(req, res)=>{
 
 // Pdfs Search by title
 // http://localhost:5000/pdfsbytitle?title=Operating System
-app.get("/pdfsbytitle", async(req, res)=>{
+app.get("/Fypdfsbytitle", async(req, res)=>{
+    const {title} = req.query;
+
+    const fyPdfs = await FyPdf.find({
+        title: {$regex: title, $options: 'i'}
+    })
+
+    res.json({
+        success: true,
+        message: "pdfs fetched successfully",
+        data: fyPdfs
+    })
+})
+
+app.get("/Sypdfsbytitle", async(req, res)=>{
+    const {title} = req.query;
+
+    const syPdfs = await SyPdf.find({
+        title: {$regex: title, $options: 'i'}
+    })
+
+    res.json({
+        success: true,
+        message: "pdfs fetched successfully",
+        data: syPdfs
+    })
+})
+
+app.get("/Typdfsbytitle", async(req, res)=>{
     const {title} = req.query;
 
     const tyPdfs = await TyPdf.find({
@@ -233,21 +261,20 @@ app.get("/pdfsbytitle", async(req, res)=>{
     })
 })
 
-// Food item Search by category
-// http://localhost:5000/pdfsbyyear?year=Third-Year
-app.get("/pdfsbyyear", async(req, res)=>{
-    const {year} = req.query;
+// // http://localhost:5000/pdfsbyyear?year=Third-Year
+// app.get("/pdfsbyyear", async(req, res)=>{
+//     const {year} = req.query;
   
-    const tyPdfs = await TyPdf.find({
-        year: {$regex: year, $options: 'i'}
-    })
+//     const tyPdfs = await TyPdf.find({
+//         year: {$regex: year, $options: 'i'}
+//     })
   
-      res.json({
-          success: true,
-          message: "pdfs fetched successfully",
-          data: tyPdfs
-      })
-})
+//       res.json({
+//           success: true,
+//           message: "pdfs fetched successfully",
+//           data: tyPdfs
+//       })
+// })
 
 
 // api routes ends here
