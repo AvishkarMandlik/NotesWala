@@ -7,6 +7,7 @@ dotenv.config();
 import User from './models/User.js';
 import TyPdf from './models/TyPdf.js';
 import SyPdf from './models/SyPdf.js';
+import FyPdf from './models/FyPdf.js';
 
 const app = express();
 app.use(express.json());
@@ -133,7 +134,7 @@ app.post("/createTyPdf", async(req,res)=>{
         data: savedPdf
     })
 })
-// Create or ADD PDF api ends here
+
 
 app.post("/createSyPdf", async(req,res)=>{
     const {title, description,pdfUrl,imgUrl,year,faculty} = req.body;
@@ -155,8 +156,43 @@ app.post("/createSyPdf", async(req,res)=>{
         data: savedPdf
     })
 })
-// All Sy Pdfs fetching api starts here
 
+
+app.post("/createFyPdf", async(req,res)=>{
+    const {title, description,pdfUrl,imgUrl,year,faculty} = req.body;
+    
+    const fyPdfs = new FyPdf({
+        title: title,
+        description: description,
+        pdfUrl: pdfUrl,
+        imgUrl: imgUrl,
+        year: year,
+        faculty: faculty
+    })
+
+    const savedPdf = await fyPdfs.save();
+
+    res.json({
+        success: true,
+        message: "PDF added successfully",
+        data: savedPdf
+    })
+})
+// Create or ADD PDF api ends here
+
+// All Fy Pdfs fetching api starts here
+app.get("/FyallPdfs", async(req, res)=>{
+    const fyPdfs = await FyPdf.find()
+
+    res.json({
+        success: true,
+        message: "Pdf Items fetched successfully",
+        data: fyPdfs
+    })
+})
+// All Fy Pdfs fetching api ends here
+
+// All Sy Pdfs fetching api starts here
 app.get("/SyallPdfs", async(req, res)=>{
     const syPdfs = await SyPdf.find()
 
@@ -167,7 +203,6 @@ app.get("/SyallPdfs", async(req, res)=>{
     })
 })
 // All Sy Pdfs fetching api ends here
-
 
 // All Ty Pdfs fetching api starts here
 app.get("/TyallPdfs", async(req, res)=>{
@@ -181,9 +216,38 @@ app.get("/TyallPdfs", async(req, res)=>{
 })
 // All Ty Pdfs fetching api ends here
 
+
 // Pdfs Search by title
 // http://localhost:5000/pdfsbytitle?title=Operating System
-app.get("/pdfsbytitle", async(req, res)=>{
+app.get("/Fypdfsbytitle", async(req, res)=>{
+    const {title} = req.query;
+
+    const fyPdfs = await FyPdf.find({
+        title: {$regex: title, $options: 'i'}
+    })
+
+    res.json({
+        success: true,
+        message: "pdfs fetched successfully",
+        data: fyPdfs
+    })
+})
+
+app.get("/Sypdfsbytitle", async(req, res)=>{
+    const {title} = req.query;
+
+    const syPdfs = await SyPdf.find({
+        title: {$regex: title, $options: 'i'}
+    })
+
+    res.json({
+        success: true,
+        message: "pdfs fetched successfully",
+        data: syPdfs
+    })
+})
+
+app.get("/Typdfsbytitle", async(req, res)=>{
     const {title} = req.query;
 
     const tyPdfs = await TyPdf.find({
@@ -197,21 +261,20 @@ app.get("/pdfsbytitle", async(req, res)=>{
     })
 })
 
-// Food item Search by category
-// http://localhost:5000/pdfsbyyear?year=Third-Year
-app.get("/pdfsbyyear", async(req, res)=>{
-    const {year} = req.query;
+// // http://localhost:5000/pdfsbyyear?year=Third-Year
+// app.get("/pdfsbyyear", async(req, res)=>{
+//     const {year} = req.query;
   
-    const tyPdfs = await TyPdf.find({
-        year: {$regex: year, $options: 'i'}
-    })
+//     const tyPdfs = await TyPdf.find({
+//         year: {$regex: year, $options: 'i'}
+//     })
   
-      res.json({
-          success: true,
-          message: "pdfs fetched successfully",
-          data: tyPdfs
-      })
-})
+//       res.json({
+//           success: true,
+//           message: "pdfs fetched successfully",
+//           data: tyPdfs
+//       })
+// })
 
 
 // api routes ends here

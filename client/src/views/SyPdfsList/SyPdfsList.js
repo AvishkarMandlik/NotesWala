@@ -17,7 +17,7 @@ function SyPdfsList() {
   }
 
   async function fetchSpecificItems() {
-    const response = await axios.get(`/pdfsbytitle?title=${searchText}`);
+    const response = await axios.get(`/Sypdfsbytitle?title=${searchText}`);
     console.log(response.data.data);
     setAllPdfitems(response.data.data);
   }

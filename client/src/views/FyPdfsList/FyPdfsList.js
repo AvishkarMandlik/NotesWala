@@ -2,22 +2,22 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 import PdfCard from "../../components/PdfCard";
+import "./FyPdfsList.css";
+
 import { loginRequired } from "../../util/loginRequired";
-import "./TyPdfsList.css";
 
-
-function TyPdfsList() {
+function FyPdfsList() {
   const [searchText, setSearchText] = useState("");
   const [currentPdfItems, setAllPdfitems] = useState([]);
 
   async function fetchAllItem() {
-    const response = await axios.get("/TyallPdfs");
+    const response = await axios.get("/FyallPdfs");
     console.log(response.data.data);
     setAllPdfitems(response.data.data);
   }
 
   async function fetchSpecificItems() {
-    const response = await axios.get(`/Typdfsbytitle?title=${searchText}`);
+    const response = await axios.get(`/Fypdfsbytitle?title=${searchText}`);
     console.log(response.data.data);
     setAllPdfitems(response.data.data);
   }
@@ -74,4 +74,4 @@ function TyPdfsList() {
   );
 }
 
-export default TyPdfsList;
+export default FyPdfsList;
