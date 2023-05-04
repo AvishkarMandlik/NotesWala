@@ -32,10 +32,6 @@ function SyPdfsList() {
     }
   }, [searchText]);
 
-  function LogOut() {
-    localStorage.removeItem("currentUser");
-    window.location.href = "/login";
-  }
 
   useEffect(() => {
     loginRequired();
