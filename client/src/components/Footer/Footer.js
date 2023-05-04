@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
 import "./Footer.css";
+
+import logo1 from './logo1.png';
+
 function Footer() {
   return (
     <>
@@ -9,8 +11,8 @@ function Footer() {
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-3 text-center">
-                    <img class="footer-logo" src="./img/logo-img.png" alt="png"/>
-                    <h4 className='about-heading'>Bcs Noteswala</h4>
+                    <img class="footer-logo" src={logo1} alt="png"/>
+                    {/* <h4 className='about-heading'>Bcs Noteswala</h4> */}
                     <div class="footer-social-media ">
                         <Link href="#"><i class="fab fa-github p-3"></i></Link>
                         <Link href="#"><i class="fab fa-linkedin-in p-3"></i></Link>
