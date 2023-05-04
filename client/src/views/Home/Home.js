@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../../components/Navbar/Navbar';
+import Footer from '../../components/Footer/Footer';
 import { currentUser } from '../../util/currentUser';
 
 import './Home.css'
@@ -196,9 +197,9 @@ function Home() {
                         <div className="name">Avishkar Mandlik</div>
                         <div className="about">Designer & Developer</div>
                         <div className="social-icons">
-                            <a href="https://www.facebook.com/avishkarmandlik" className="fb"><i className="fab fa-facebook-f"></i></a>
+                            <a href="https://www.facebook.com/avimandlikpatil" className="fb"><i className="fab fa-facebook-f"></i></a>
                             <a href="https://www.twitter.com/avishkarmandlik" className="twitter"><i className="fab fa-twitter"></i></a>
-                            <a href="https://www.instagram.com//avishkarmandlik" className="insta"><i className="fab fa-instagram"></i></a>
+                            <a href="https://www.instagram.com//avimandlikpatil" className="insta"><i className="fab fa-instagram"></i></a>
                             <a href="https://www.github.com//avishkarmandlik" className="yt"><i className="fab fa-github"></i></a>
                         </div>
                     </div>
@@ -241,9 +242,7 @@ function Home() {
                 </div>
             </div>
 
-  
-           
-
+            <Footer />
         </div>
 
     )
