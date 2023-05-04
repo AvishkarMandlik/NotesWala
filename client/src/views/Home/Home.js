@@ -1,15 +1,15 @@
 import React from 'react'
+import Navbar from '../../components/Navbar/Navbar';
 import { currentUser } from '../../util/currentUser';
+
 import './Home.css'
 
 
 function Home() {
 
 
-    function logOut() {
-        localStorage.removeItem('currentUser');
-        window.location.href = './login'
-    }
+   
+
 
     if (!currentUser) {
         window.location.href = './login'
@@ -17,11 +17,8 @@ function Home() {
 
     return (
         <div>
-            <h1 className='text-center'>Home</h1>
-            <h2>{currentUser?.name}</h2>
-
-            <button type="button" className='btn btn-success' onClick={logOut}>Logout</button>
-
+             <Navbar user={currentUser?.name} />
+           
             {/* heading names */}
             <div className='heading text-center'>
                 <span className='main-heading'>BCS NOTESWALA</span> <br></br>
@@ -63,7 +60,7 @@ function Home() {
 
 
             {/* featured collections */}
-            <div className='row'>
+            <div className='row' id='feature'>
                 <h1 className='about-heading mt-5'>Featured Collections</h1>
                 <div className='col-md-4'>
                     <div className="container">
