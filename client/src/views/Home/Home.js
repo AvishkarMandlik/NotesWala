@@ -244,10 +244,7 @@ function Home() {
             </div>
 
   
-            {/* sliding-images */}
-            <div className='sliding-img '>
-
-            </div>
+           
 
         </div>
 
