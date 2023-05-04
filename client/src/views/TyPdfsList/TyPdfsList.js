@@ -55,6 +55,7 @@ function TyPdfsList() {
       </div>
       <div>
         <div className="row">
+        <h2 className="about-heading">Third Year PDF's</h2>
           {currentPdfItems?.map((pdfs) => {
             return (
               <PdfCard
