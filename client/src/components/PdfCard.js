@@ -17,7 +17,7 @@ function PdfCard({year,description,imgUrl,faculty,title,pdfUrl}) {
             <p>{description}</p>
             <p>{year}</p>
             <span>{faculty}</span>
-            <Link to={pdfUrl}> <button className='btn-view-pdf'> View Pdf</button></Link> <br/>
+            <Link to={pdfUrl}> <button className='btn-view-pdf btn btn-success '> View Pdf</button></Link> <br/>
         </div>
     </div>
 

@@ -55,6 +55,7 @@ function SyPdfsList() {
       </div>
       <div>
         <div className="row ">
+        <h2 className="about-heading">Second Year PDF's</h2>
           {currentPdfItems?.map((pdfs) => {
             return (
               <PdfCard

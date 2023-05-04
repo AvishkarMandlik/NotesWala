@@ -13,3 +13,20 @@
   min-width: 600px;
   padding: 5px;
 }
+
+.about-heading {
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 3rem;
+}
+
+.about-heading:after {
+  display: block;
+  height: 4px;
+  background-color: orangered;
+  content: ' ';
+  width: 90px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
