@@ -61,6 +61,116 @@ function Home() {
             </div>
 
 
+
+            {/* featured collections */}
+            <div className='row'>
+                <h1 className='about-heading mt-5'>Featured Collections</h1>
+                <div className='col-md-4'>
+                    <div className="container">
+                        <div className="mobile-layout">
+                            <div className="actions">
+                                <i className="fas fa-chevron-left"></i>
+                                <button type="button" class="btn btn-success">VIEW ALL</button>
+                            </div>
+                            <div className="book-cover">
+                                <img className="book-top"
+                                    src="https://image.slidesharecdn.com/aslevel-1-150815105029-lva1-app6891/95/as-level-computer-science-book-1-1-638.jpg?cb=1439636192"
+                                    alt="book-top" />
+                                <img className="book-side"
+                                    src="https://raw.githubusercontent.com/atomic-variable/images-repo/e37f432405904a280858e5437ce1960753bc78a3/book-side.svg"
+                                    alt="book-side" />
+                            </div>
+                            <div className="preface">
+                                <div className="content">
+
+                                    <div className="header">
+                                        <div className="title">FYBSC Computer Science</div>
+                                        <div className="icon">
+                                            <i className="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div className="body">
+                                        <p>Here all FYBSC computer science subjects pdf's are available by there semesterwise.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='col-md-4'>
+                    <div className="container">
+                        <div className="mobile-layout">
+
+                            <div className="actions">
+                                <i className="fas fa-chevron-left"></i>
+                                <button type="button" class="btn btn-success">VIEW ALL</button>
+                            </div>
+                            <div className="book-cover">
+                                <img className="book-top"
+                                    src="https://www.ibbookshop.co.uk/wp-content/uploads/2017/03/9781471542091.jpg"
+                                    alt="book-top" />
+                                <img className="book-side"
+                                    src="https://raw.githubusercontent.com/atomic-variable/images-repo/e37f432405904a280858e5437ce1960753bc78a3/book-side.svg"
+                                    alt="book-side" />
+                            </div>
+                            <div className="preface">
+                                <div className="content">
+                                    <div className="header">
+                                        <div className="title">SYBSC Computer Science</div>
+                                        <div className="icon">
+                                            <i className="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div className="body">
+                                        <p>Here all SYBSC computer science subjects pdf's are available by there semesterwise.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='col-md-4'>
+                    <div className="container">
+                        <div className="mobile-layout">
+
+                            <div className="actions">
+                                <i className="fas fa-chevron-left"></i>
+                                <button type="button" class="btn btn-success">VIEW ALL</button>
+                            </div>
+                            <div className="book-cover">
+                                <img className="book-top"
+                                    src="https://www.ibbookshop.co.uk/wp-content/uploads/2017/09/9781471552335.jpg"
+                                    alt="book-top" />
+                                <img className="book-side"
+                                    src="https://raw.githubusercontent.com/atomic-variable/images-repo/e37f432405904a280858e5437ce1960753bc78a3/book-side.svg"
+                                    alt="book-side" />
+                            </div>
+                            <div className="preface">
+                                <div className="content">
+                                    <div className="header">
+                                        <div className="title">TYBSC Computer Science</div>
+                                        <div className="icon">
+                                            <i className="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div className="body">
+                                        <p>Here all TYBSC computer science subjects pdf's are available by there semesterwise.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+      
+
         </div>
 
     )
