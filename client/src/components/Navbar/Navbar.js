@@ -2,7 +2,6 @@ import React from 'react'
 import {Link} from 'react-router-dom';
 import { currentUser } from '../../util/currentUser';
 
-
 function Navbar() {
     function logOut() {
         localStorage.removeItem('currentUser');
@@ -19,7 +18,7 @@ function Navbar() {
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <Link class="nav-link active" aria-current="page" href="#">Home</Link>
+          <Link to="/" class="nav-link active" aria-current="page" >Home</Link>
         </li>
         <li class="nav-item" >
           <Link class="nav-link" href="feature">Features</Link>
