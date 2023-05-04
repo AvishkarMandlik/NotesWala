@@ -55,6 +55,7 @@ function FyPdfsList() {
       </div>
       <div>
         <div className="row">
+          <h2 className="about-heading">First Year PDF's</h2>
           {currentPdfItems?.map((pdfs) => {
             return (
               <PdfCard
