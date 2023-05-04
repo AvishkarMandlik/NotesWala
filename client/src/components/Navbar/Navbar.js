@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
 import { currentUser } from '../../util/currentUser';
-
+import './Navbar.css'
 function Navbar() {
     function logOut() {
         localStorage.removeItem('currentUser');
@@ -38,7 +38,7 @@ function Navbar() {
         </li>
       </ul>
     </div>
-    <h4 className='m-1'>{currentUser?.name}</h4>
+    <h4 className='m-2' style={{color: 'black',fontSize: '25px'}}>{currentUser?.name}</h4>
     <button type="button" className='btn btn-success' onClick={logOut}>Logout</button>
 
   </div>

@@ -1,0 +1,13 @@
+.navbar-brand {
+    font-size: 25px;
+    font-weight: bold;
+    color: #fae1dd;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    text-shadow: 1px 1px #333;
+  }
+ .navbar-brand:hover,
+ .navbar-brand:focus {
+    color: rgb(216, 145, 145);
+ }
