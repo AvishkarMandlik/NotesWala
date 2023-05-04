@@ -3,6 +3,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import { currentUser } from '../../util/currentUser';
 
 import './Home.css'
+import { Link } from 'react-router-dom';
 
 
 function Home() {
@@ -67,7 +68,7 @@ function Home() {
                         <div className="mobile-layout">
                             <div className="actions">
                                 <i className="fas fa-chevron-left"></i>
-                                <button type="button" class="btn btn-success">VIEW ALL</button>
+                          <Link to="/FyPdfsList"> <button type="button" class="btn btn-success">VIEW ALL</button></Link> 
                             </div>
                             <div className="book-cover">
                                 <img className="book-top"
@@ -102,7 +103,7 @@ function Home() {
 
                             <div className="actions">
                                 <i className="fas fa-chevron-left"></i>
-                                <button type="button" class="btn btn-success">VIEW ALL</button>
+                                <Link to="/SyPdfsList"> <button type="button" class="btn btn-success">VIEW ALL</button></Link> 
                             </div>
                             <div className="book-cover">
                                 <img className="book-top"
@@ -135,7 +136,7 @@ function Home() {
 
                             <div className="actions">
                                 <i className="fas fa-chevron-left"></i>
-                                <button type="button" class="btn btn-success">VIEW ALL</button>
+                                <Link to="/TyPdfsList"> <button type="button" class="btn btn-success">VIEW ALL</button></Link> 
                             </div>
                             <div className="book-cover">
                                 <img className="book-top"
