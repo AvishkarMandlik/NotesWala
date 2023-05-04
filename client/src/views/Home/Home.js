@@ -1,15 +1,16 @@
 import React from 'react'
+import Navbar from '../../components/Navbar/Navbar';
 import { currentUser } from '../../util/currentUser';
+
 import './Home.css'
+import { Link } from 'react-router-dom';
 
 
 function Home() {
 
 
-    function logOut() {
-        localStorage.removeItem('currentUser');
-        window.location.href = './login'
-    }
+   
+
 
     if (!currentUser) {
         window.location.href = './login'
@@ -17,11 +18,8 @@ function Home() {
 
     return (
         <div>
-            <h1 className='text-center'>Home</h1>
-            <h2>{currentUser?.name}</h2>
-
-            <button type="button" className='btn btn-success' onClick={logOut}>Logout</button>
-
+             <Navbar user={currentUser?.name} />
+           
             {/* heading names */}
             <div className='heading text-center'>
                 <span className='main-heading'>BCS NOTESWALA</span> <br></br>
@@ -63,14 +61,14 @@ function Home() {
 
 
             {/* featured collections */}
-            <div className='row'>
+            <div className='row' id='feature'>
                 <h1 className='about-heading mt-5'>Featured Collections</h1>
                 <div className='col-md-4'>
                     <div className="container">
                         <div className="mobile-layout">
                             <div className="actions">
                                 <i className="fas fa-chevron-left"></i>
-                                <button type="button" class="btn btn-success">VIEW ALL</button>
+                          <Link to="/FyPdfsList"> <button type="button" class="btn btn-success">VIEW ALL</button></Link> 
                             </div>
                             <div className="book-cover">
                                 <img className="book-top"
@@ -105,7 +103,7 @@ function Home() {
 
                             <div className="actions">
                                 <i className="fas fa-chevron-left"></i>
-                                <button type="button" class="btn btn-success">VIEW ALL</button>
+                                <Link to="/SyPdfsList"> <button type="button" class="btn btn-success">VIEW ALL</button></Link> 
                             </div>
                             <div className="book-cover">
                                 <img className="book-top"
@@ -138,7 +136,7 @@ function Home() {
 
                             <div className="actions">
                                 <i className="fas fa-chevron-left"></i>
-                                <button type="button" class="btn btn-success">VIEW ALL</button>
+                                <Link to="/TyPdfsList"> <button type="button" class="btn btn-success">VIEW ALL</button></Link> 
                             </div>
                             <div className="book-cover">
                                 <img className="book-top"

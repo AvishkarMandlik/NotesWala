@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
+import Navbar from "../../components/Navbar/Navbar";
+import { currentUser } from "../../util/currentUser";
 import PdfCard from "../../components/PdfCard";
 import "./SyPdfsList.css";
 
@@ -41,6 +43,7 @@ function SyPdfsList() {
 
   return (
     <div>
+      <Navbar user={currentUser?.name} />
       <div className="search-container">
         <input
           type="text"
@@ -66,10 +69,6 @@ function SyPdfsList() {
           })}
         </div>
       </div>
-
-      <button type="button" className="btn btn-primary" onClick={LogOut}>
-        Logout
-      </button>
     </div>
   );
 }
