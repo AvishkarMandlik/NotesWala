@@ -1,0 +1,444 @@
+/*heading home page*/
+.main-heading {
+    font-size: 3.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.main-head-2 {
+    font-size: 1.5rem;
+    color: orangered;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn-wel {
+    background-color: yellow;
+    color: black;
+    width: 13rem;
+    font-size: 1.5rem;
+    border: 0.1rem solid black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*end heading of home page*/
+
+
+/*landing image and division starts*/
+.landing-page {
+    height: 30rem;
+    background-image: url("https://w0.peakpx.com/wallpaper/121/414/HD-wallpaper-beautiful-scenery-art-book-nature-cliff-sky-sea-thumbnail.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.landing-head {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.landing-info {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.colo {
+    color: orangered;
+}
+
+/*landing image end*/
+
+
+/* cards starts*/
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --mobile-width: 325px;
+    --mobile-height: 670px;
+    --mobile-radius: 25px;
+    --separator-height: 500px;
+
+    --bg: #fdf3f2;
+    --mobile-bg: #4dffc3;
+    --intro-bg: #66ff99;
+    --font-color: #807b7b;
+
+    --transition: transform 0.7s ease-in-out;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+
+.mobile-layout {
+    width: var(--mobile-width);
+    height: var(--mobile-height);
+    margin: 30px 0;
+    border-radius: var(--mobile-radius);
+    perspective: 500px;
+    overflow: hidden;
+    color: var(--font-color);
+    background-color: var(--mobile-bg);
+    border: 0.1rem solid gray;
+    box-shadow: 0 14px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.mobile-layout.notification-header {
+    position: fixed;
+    top: 5px;
+    width: 100%;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    z-index: 6;
+}
+
+.actions {
+    position: fixed;
+    top: 37px;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    z-index: 6;
+}
+
+.book-cover {
+    position: relative;
+    height: var(--separator-height);
+    width: calc(var(--mobile-width) * 2);
+    left: -52.5%;
+    border-top-left-radius: var(--mobile-radius);
+    border-top-right-radius: var(--mobile-radius);
+    background-color: var(--intro-bg);
+    transform-style: preserve-3d;
+    transform-origin: 50% 40%;
+    transition: var(--transition);
+    z-index: 4;
+}
+
+.book-top {
+    width: 170px;
+    position: absolute;
+    top: 180px;
+    left: 250px;
+    z-index: 5;
+    transform: translateZ(28.5px);
+}
+
+.book-side {
+    position: absolute;
+    top: 430px;
+    left: 222px;
+    transform: translateY(-15px) translateX(0px) translateZ(15px) rotateX(104deg);
+}
+
+.book-cover:hover {
+    transform: rotateX(75deg) translateZ(3px) scale(0.75);
+}
+
+.book-cover:hover+.preface {
+    transform: translateY(-302px);
+}
+
+.icon {
+    transform: rotateX(180deg);
+}
+
+.preface {
+    height: var(--separator-height);
+    padding: 50px;
+    transition: var(--transition);
+    background: black;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.icon {
+    transform-origin: top;
+    transition: var(--transition);
+}
+
+.body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.body p:first-child {
+    margin-bottom: 15px;
+}
+
+.btn {
+    border-radius: 0px;
+    background-color: orangered;
+    border: black;
+}
+
+
+
+.information-bot {
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
+}
+
+/*ends*/
+
+
+/*about-us*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #ecf0f3;
+}
+
+.about-us {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3rem;
+    padding-top: 3rem;
+}
+
+.about-heading {
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.about-heading:after {
+    display: block;
+    height: 4px;
+    background-color: orangered;
+    content: ' ';
+    width: 90px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.wrapper,
+.wrapper .img-area,
+.social-icons a,
+.buttons button {
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff,
+        3px 3px 5px #ceced1;
+}
+
+.wrapper {
+    position: relative;
+    width: 350px;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.wrapper .icon {
+    font-size: 17px;
+    color: #31344b;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.7;
+    top: 15px;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+.wrapper .icon i {
+    position: relative;
+    z-index: 9;
+}
+
+.wrapper .icon.arrow {
+    left: 15px;
+}
+
+.wrapper .icon.dots {
+    right: 15px;
+}
+
+.wrapper .img-area {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-area .inner-area {
+    height: calc(100% - 25px);
+    width: calc(100% - 25px);
+    border-radius: 50%;
+}
+
+.inner-area img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.wrapper .name {
+    font-size: 23px;
+    font-weight: 500;
+    color: #31344b;
+    margin: 10px 0 5px 0;
+}
+
+.wrapper .about {
+    color: #44476a;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.wrapper .social-icons {
+    margin: 15px 0 25px 0;
+}
+
+.social-icons a {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+    display: inline-flex;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.social-icons a:hover::before,
+.wrapper .icon:hover::before,
+.buttons button:hover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    background: #ecf0f3;
+    box-shadow: inset -3px -3px 7px #ffffff,
+        inset 3px 3px 5px #ceced1;
+}
+
+.buttons button:hover:before {
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.social-icons a i {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+}
+
+.social-icons a.fb i {
+    color: #4267B2;
+}
+
+.social-icons a.twitter i {
+    color: #1DA1F2;
+}
+
+.social-icons a.insta i {
+    color: #E1306C;
+}
+
+.social-icons a.yt i {
+    color: black;
+}
+
+.wrapper .buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/*about us ends*/
+
+
+/*sliding images*/
+
+.sliding-img {
+    width: 100%;
+    height: 400px;
+    margin-top: 0px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 5%);
+    background-image: url("https://img.freepik.com/free-vector/thank-you-placard-concept-illustration_114360-13436.jpg?w=2000");
+    background-size: 100% 100%;
+    animation: slider 9s infinite linear;
+}
+
+@keyframes slider {
+    0% {
+        background-image: url("https://img.freepik.com/free-vector/thank-you-placard-concept-illustration_114360-13436.jpg?w=2000");
+        background-size: 100% 100%;
+    }
+
+    30% {
+        background-image: url("https://www.vedantu.com/seo/content-images/0113bbe1-7357-4836-8c91-90f6f4bda126.png");
+        background-size: 100% 100%;
+    }
+
+    75% {
+        background-image: url("https://media.swncdn.com/cms/CROSSCARDS/15048-thank-you-for-visiting-800x400.jpg");
+        background-size: 100% 100%;
+    }
+}
+
+/*sliding-img ends*/
