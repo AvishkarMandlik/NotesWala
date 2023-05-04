@@ -69,10 +69,6 @@ function FyPdfsList() {
           })}
         </div>
       </div>
-
-      <button type="button" className="btn btn-primary" onClick={LogOut}>
-        Logout
-      </button>
     </div>
   );
 }
