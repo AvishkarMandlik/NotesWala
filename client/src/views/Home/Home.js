@@ -29,7 +29,18 @@ function Home() {
             </div> <br></br>
 
 
-           
+            {/* landing page */}
+            <div className='row landing-page'>
+                <div className='col-md-12 text-center mt-2'>
+                    <span className='landing-head'>Who Are We ? </span> <br></br>
+                    <span className='landing-info'>We Are here to provide you Quality of Notes for Quality Future <br></br>
+                        and also helps you for your Examinations and many competitive exams.</span>
+                </div>
+            </div>
+
+
+
+
         </div>
 
     )
