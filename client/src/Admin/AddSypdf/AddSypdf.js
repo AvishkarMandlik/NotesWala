@@ -37,10 +37,10 @@ function AddSypdf() {
 
   return (
     <>
-      <div className="AddFypdf-form-container mt-5">
+      <div className="AddFypdf-form-container px-5 mt-5">
         <input
           type="text"
-          className="form-control-md"
+          className="form-control-sm"
           id="Name"
           placeholder="Enter Subject Title"
           value={title}
@@ -50,7 +50,7 @@ function AddSypdf() {
         />
         <input
           type="text"
-          className="form-control-md"
+          className="form-control-sm"
           id="Name"
           placeholder="description"
           value={description}
@@ -60,7 +60,7 @@ function AddSypdf() {
         />
         <input
           type="text"
-          className="form-control-md"
+          className="form-control-sm"
           id="Name"
           placeholder="imgUrl"
           value={imgUrl}
@@ -70,7 +70,7 @@ function AddSypdf() {
         />
         <input
           type="text"
-          className="form-control-md"
+          className="form-control-sm"
           id="Name"
           placeholder="pdfUrl"
           value={pdfUrl}
@@ -80,7 +80,7 @@ function AddSypdf() {
         />
         <input
           type="text"
-          className="form-control-md"
+          className="form-control-sm"
           id="Name"
           placeholder="year"
           value={year}
@@ -90,7 +90,7 @@ function AddSypdf() {
         />
         <input
           type="text"
-          className="form-control-md"
+          className="form-control-sm"
           id="Name"
           placeholder="faculty"
           value={faculty}
