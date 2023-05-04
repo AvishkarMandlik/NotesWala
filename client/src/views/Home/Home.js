@@ -184,7 +184,67 @@ function Home() {
                 </div>
             </div>
 
-       
+            {/* about-us */}
+            <div className='row about-us'>
+                <h1 className='about-heading'>About Us</h1>
+                <div className='col-md-4'>
+                    <div className="wrapper">
+                        <div className="img-area">
+                            <div className="inner-area">
+                                <img src="https://github.com/avishkarmandlik.png" alt=""></img>
+                            </div>
+                        </div>
+                        
+                        <div className="name">Avishkar Mandlik</div>
+                        <div className="about">Designer & Developer</div>
+                        <div className="social-icons">
+                            <a href="https://www.facebook.com/avishkarmandlik" className="fb"><i className="fab fa-facebook-f"></i></a>
+                            <a href="https://www.twitter.com/avishkarmandlik" className="twitter"><i className="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com//avishkarmandlik" className="insta"><i className="fab fa-instagram"></i></a>
+                            <a href="https://www.github.com//avishkarmandlik" className="yt"><i className="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div className='col-md-4'>
+                <div className="wrapper">
+                        <div className="img-area">
+                            <div className="inner-area">
+                                <img src="https://github.com/anikettikkal.png" alt=""></img>
+                            </div>
+                        </div>
+                        
+                        <div className="name">Aniket Tikkal</div>
+                        <div className="about">Designer & Developer</div>
+                        <div className="social-icons">
+                            <a href="https://www.facebook.com/anikettikkal" className="fb"><i className="fab fa-facebook-f"></i></a>
+                            <a href="https://www.twitter.com/anikettikkal" className="twitter"><i className="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/anikettikkal" className="insta"><i className="fab fa-instagram"></i></a>
+                            <a href="https://www.github.com/anikettikkal" className="yt"><i className="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div className='col-md-4'>
+                <div className="wrapper">
+                        <div className="img-area">
+                            <div className="inner-area">
+                                <img src="https://github.com/vishalgaikwad11.png" alt=""></img>
+                            </div>
+                        </div>
+                        
+                        <div className="name">Vishal Gaikwad</div>
+                        <div className="about">Designer & Developer</div>
+                        <div className="social-icons">
+                            <a href="https://www.facebook.com/vishalgaikwad" className="fb"><i className="fab fa-facebook-f"></i></a>
+                            <a href="https://www.twitter.com/vishalgaikwad" className="twitter"><i className="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/vishalgaikwad11" className="insta"><i className="fab fa-instagram"></i></a>
+                            <a href="https://www.github.com/VishalGaikwad11" className="yt"><i className="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+  
+
 
         </div>
 
