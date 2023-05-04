@@ -3,6 +3,7 @@ import { currentUser } from "../util/currentUser";
 import AddTypdf from "./AddTypdf/AddTypdf";
 import AddSypdf from "./AddSypdf/AddSypdf";
 import AddFypdf from "./AddFypdf/AddFypdf";
+import { notadmin } from "../util/notadmin";
 
 function Admin() {
   if (currentUser.role === "admin") {
@@ -24,8 +25,9 @@ function Admin() {
     );
   } 
   else {
-    alert("You are not authorized to view this page");
-    window.location.href = "/";
+    
+      notadmin();
+    
   }
 }
 
