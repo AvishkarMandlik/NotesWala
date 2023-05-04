@@ -39,6 +39,26 @@ function Home() {
             </div>
 
 
+            {/* description */}
+            <div className='row bg-light'>
+                <div className='col-md-6 pt-5 px-5'>
+                    <h2 className='about-heading'>Our Vision</h2>
+                    <span className='information-bot'>We are provided previous question papers. <br></br>
+                        You Can Practice M.C.Q. Questions As Well As Theory Questions For Your Examination.
+                        All Previous Past 10 Year Questions With Their Correct Answer.</span> <br></br>
+                    <img className='mt-3' src="https://noteswala.online/wp-content/uploads/2022/06/kph-2.ico" alt=""></img> <br></br> <br></br>
+                    <img className='mt-3' src="https://noteswala.online/wp-content/uploads/2022/06/kph-1.ico" alt=""></img>
+                </div>
+                <div className='col-md-6 pt-5 px-5'>
+                    <h4>Notes For BCS</h4>
+                    <h4><span className='colo'>100+</span> Questions For Operating System</h4>
+                    <span className='information-bot'>You Can Get Free Previous Year Questions For Practice for your University examinations.</span> <br></br> <br></br>
+                    <h4><span className='colo'>100+</span> Questions For Therotical Computer Science</h4>
+                    <span className='information-bot'>You Can Get Free Previous Year Questions For Practice for your University examinations.</span> <br></br> <br></br>
+                    <h4><span className='colo'>100+</span> Questions For Software Testing</h4>
+                    <span className='information-bot'>You Can Get Free Previous Year Questions For Practice for your University examinations.</span>
+                </div>
+            </div>
 
 
         </div>
