@@ -169,7 +169,22 @@ function Home() {
             </div>
 
 
-      
+            {/* information */}
+
+            <div className=' row vision bg-light'>
+                <div className='col-md-6 text-center px-5 pt-5'>
+                    <h1 className='text-center about-heading'>Study Material For Your Examinations.</h1> <br></br>
+                    <span className='information-bot'>Here You Can Get Free Notes Of All Courses All Subjects i.e Notes for BSC Computer Science,
+                        BSC, BA, BCA Just Click By Once & Get All Subjects & Chapters PDF's.
+                        You Can Do Revision For your Examinations A Day Before Your Exams.
+                    </span>
+                </div>
+                <div className='col-md-6 text-center mt-5 mb-5'>
+                    <img src="https://img.freepik.com/free-vector/online-library-app-reading-banner_33099-1733.jpg" height="300px" alt=""></img>
+                </div>
+            </div>
+
+       
 
         </div>
 
