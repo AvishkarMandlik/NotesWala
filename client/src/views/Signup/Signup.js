@@ -62,7 +62,7 @@ function Signup() {
                     <img className='image-sgn-leftrow mx-5' src="https://img.freepik.com/free-vector/reading-book-illustration_114360-8532.jpg" alt='' />
                 </div>
 
-                <div className='col-lg-6 mt-4'>
+                <div className='col-lg-6 mt-4 '>
                     <div className='form-container '>
                         <span className='my-element display-5 '><img className='image-wel' src='https://thumbs.dreamstime.com/b/hand-book-logo-illustration-art-background-43965136.jpg' alt='' /> Welcome</span>
                         <form>
