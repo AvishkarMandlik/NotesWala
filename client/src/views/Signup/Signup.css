@@ -1,6 +1,5 @@
 .form-container{
     width: 420px;
-    padding: 20px;
     border-radius: 10px;
     margin: 0 auto;
     background-color:white;
@@ -27,7 +26,6 @@
     width:220px;
     color: white;
     cursor: pointer;
-    margin: 10px;
     font-weight: 500;
     font-size: 22px;
     border: 1px solid green;

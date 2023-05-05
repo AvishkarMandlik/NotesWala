@@ -11,3 +11,7 @@
  .navbar-brand:focus {
     color: rgb(216, 145, 145);
  }
+ .logout{
+   border:1.5px solid white;
+   border-radius: 0px;
+ }

@@ -38,8 +38,8 @@ function Navbar() {
         </li>
       </ul>
     </div>
-    <h4 className='m-2' style={{color: 'black',fontSize: '25px'}}>{currentUser?.name}</h4>
-    <button type="button" className='btn btn-success' onClick={logOut}>Logout</button>
+    <h4 className='m-2' style={{color: 'white',fontSize: '25px'}}>{currentUser?.name}</h4>
+    <button type="button" className='logout btn btn-success' onClick={logOut}>Logout</button>
 
   </div>
 </nav>

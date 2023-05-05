@@ -4,6 +4,7 @@ import swal from 'sweetalert';
 
 import axios from 'axios'
 import "./Login.css"
+import { Link } from 'react-router-dom';
 
 function Login() {
     const [email, setEmail] = useState('')
@@ -37,7 +38,7 @@ function Login() {
                 text: response.data.message,
                 icon: "error",
                 button: "Try Again!",
-              });
+            });
             setEmail("")
             setPassword("")
             localStorage.removeItem('currentUser');
@@ -77,6 +78,11 @@ function Login() {
 
                             <div>
                                 <button type='button' className='login-button  mt-4' onClick={loginUser}>Login 💨</button>
+                            </div>
+
+                            <div className="not-signup-btn-container">
+                                <span className='notac'>Not have an acount ?
+                                  <button className="not-signup-btn"> <Link to='./../Signup'> Signup here...</Link></button></span>
                             </div>
                         </form>
                     </div>
