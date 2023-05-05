@@ -28,17 +28,23 @@
 }
 
 .btn-view-pdf {
-  background-color: orangered;
-  border: black;
+  border: white;
   font-size: 20px;
   padding: 5px;
   width: 180px;
-  border-radius: 2rem;
   margin: 10px;
+  border-radius: 0px;
   border: 2px double white;
   box-shadow: 0 0 2px 0 black;
 }
+.btn-view-pdf:hover{
+  background-color: orangered;
+  border: 2px solid white;
+}
 
-.btn-view-pdf:hover {
-  color: white;
+.tit{
+  color: orangered;
+}
+.information-cards{
+  color: grey;
 }
