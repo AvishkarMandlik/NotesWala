@@ -14,10 +14,10 @@ function Footer() {
                     <img class="footer-logo" src={logo1} alt="png"/>
                     {/* <h4 className='about-heading'>Bcs Noteswala</h4> */}
                     <div class="footer-social-media ">
-                        <Link href="#"><i class="fab fa-github p-3"></i></Link>
-                        <Link href="#"><i class="fab fa-linkedin-in p-3"></i></Link>
-                        <Link href="#"><i class="fab fa-twitter p-3"></i></Link>
-                        <Link href="#"><i class="fab fa-instagram p-3"></i></Link>
+                        <Link to="https://www.github.com//AvishkarMandlik"><i className=" fab fa-github p-3"></i></Link>
+                        <Link to="https://www.linkedin.com/in/avishkar-mandlik-baa357259/"><i className="fab fa-linkedin-in p-3"></i></Link>
+                        <Link to="https://www.twitter.com/AvishkarMandlik"><i className="fab fa-twitter p-3"></i></Link>
+                        <Link to="https://www.instagram.com//avi_mandlik_patil"><i className="fab fa-instagram p-3"></i></Link>
                     </div>
                 </div>
                 <div class="col-md-2">
