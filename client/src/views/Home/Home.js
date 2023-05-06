@@ -199,7 +199,7 @@ function Home() {
                         <div className="social-icons">
                             <a href="https://www.facebook.com/avimandlikpatil" className="fb"><i className="fab fa-facebook-f"></i></a>
                             <a href="https://www.twitter.com/avishkarmandlik" className="twitter"><i className="fab fa-twitter"></i></a>
-                            <a href="https://www.instagram.com//avimandlikpatil" className="insta"><i className="fab fa-instagram"></i></a>
+                            <a href="https://www.instagram.com//avi_mandlik_patil" className="insta"><i className="fab fa-instagram"></i></a>
                             <a href="https://www.github.com//avishkarmandlik" className="yt"><i className="fab fa-github"></i></a>
                         </div>
                     </div>
@@ -217,7 +217,7 @@ function Home() {
                         <div className="social-icons">
                             <a href="https://www.facebook.com/anikettikkal" className="fb"><i className="fab fa-facebook-f"></i></a>
                             <a href="https://www.twitter.com/anikettikkal" className="twitter"><i className="fab fa-twitter"></i></a>
-                            <a href="https://www.instagram.com/anikettikkal" className="insta"><i className="fab fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/aniket_tikkal/" className="insta"><i className="fab fa-instagram"></i></a>
                             <a href="https://www.github.com/anikettikkal" className="yt"><i className="fab fa-github"></i></a>
                         </div>
                     </div>
@@ -235,7 +235,7 @@ function Home() {
                         <div className="social-icons">
                             <a href="https://www.facebook.com/vishalgaikwad" className="fb"><i className="fab fa-facebook-f"></i></a>
                             <a href="https://www.twitter.com/vishalgaikwad" className="twitter"><i className="fab fa-twitter"></i></a>
-                            <a href="https://www.instagram.com/vishalgaikwad11" className="insta"><i className="fab fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/vishalgaikwad96k/" className="insta"><i className="fab fa-instagram"></i></a>
                             <a href="https://www.github.com/VishalGaikwad11" className="yt"><i className="fab fa-github"></i></a>
                         </div>
                     </div>
