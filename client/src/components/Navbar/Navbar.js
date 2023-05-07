@@ -21,7 +21,7 @@ function Navbar() {
           <Link to="/" class="nav-link active" aria-current="page" >Home</Link>
         </li>
         <li class="nav-item" >
-          <Link class="nav-link" href="feature">Features</Link>
+          <a class="nav-link" href="#feature">Features</a>
         </li>
         <li class="nav-item">
           <Link class="nav-link" to="/Admin">Admin</Link>
@@ -34,6 +34,8 @@ function Navbar() {
             <li><Link to="/FyPdfsList" class="dropdown-item" >FyPdfsList</Link></li>
             <li><Link to="/SyPdfsList" class="dropdown-item">SyPdfsList</Link></li>
             <li><Link to="/TyPdfsList" class="dropdown-item" >TyPdfsList</Link></li>
+            <li><a href="#About-us" class="dropdown-item" >About-Us</a></li>
+
           </ul>
         </li>
       </ul>
