@@ -12,7 +12,7 @@
 }
 
 .btn-wel {
-    background-color: yellow;
+    background-color:  #ffd11a;
     color: black;
     width: 13rem;
     font-size: 1.5rem;
@@ -24,30 +24,21 @@
 
 
 /*landing image and division starts*/
-.landing-page {
-    height: 30rem;
-    background-image: url("https://w0.peakpx.com/wallpaper/121/414/HD-wallpaper-beautiful-scenery-art-book-nature-cliff-sky-sea-thumbnail.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+.landing-page{
+    width:60rem;
+    height:25rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 14px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    margin-bottom: 4rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+}
+.landing-image{
+    height: 20rem;
 }
 
-.landing-head {
-    font-size: 2.5rem;
-    color: white;
-    font-weight: bolder;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.landing-info {
-    color: black;
-    font-size: 1.2rem;
-    font-weight: bold;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.colo {
-    color: orangered;
-}
 
 /*landing image end*/
 
@@ -66,8 +57,8 @@
     --separator-height: 500px;
 
     --bg: #fdf3f2;
-    --mobile-bg: #4dffc3;
-    --intro-bg: #66ff99;
+    --mobile-bg: #e6ffe6;
+    --intro-bg: #d9ffcc;
     --font-color: #807b7b;
 
     --transition: transform 0.7s ease-in-out;
@@ -198,8 +189,9 @@
 
 .view {
     border-radius: 0px;
-    background-color: orangered;
-    border: black;
+    background-color: #ffccd9;
+    border:1px double black;
+    color: black;
 }
 
 
@@ -236,7 +228,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding-left: 3rem;
-    padding-top: 3rem;
+    padding-top: 1rem;
+    padding-bottom:2rem ;
 }
 
 .about-heading {

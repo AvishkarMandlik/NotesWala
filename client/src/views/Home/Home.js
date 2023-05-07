@@ -29,11 +29,18 @@ function Home() {
 
 
             {/* landing page */}
-            <div className='row landing-page'>
-                <div className='col-md-12 text-center mt-2'>
-                    <span className='landing-head'>Who Are We ? </span> <br></br>
-                    <span className='landing-info'>We Are here to provide you Quality of Notes for Quality Future <br></br>
-                        and also helps you for your Examinations and many competitive exams.</span>
+            
+            <div className='row landing-page pt-5'>
+                <div className='col-md-6'>
+                    <img className='landing-image' src="https://kit8.net/wp-content/uploads/2020/12/education@2x.png"  alt=''/>
+                </div>
+                <div className='col-md-6'>
+                    <h3>Who Are We ?</h3> <br></br>
+                    <span className='information-bot'>We are here to provide you Quality of notes for Quality Future and also helps you 
+                        for your Examinations and many competitive exams.
+                    </span> <br></br>
+                    <a href='#feature' ><button className='view  btn btn-outline-warning mt-5'>Collection ▶</button></a>
+                    <a href='#About-us' ><button className='view  btn btn-outline-warning mt-5 mx-5'>About-Us ▶</button></a>
                 </div>
             </div>
 
@@ -62,14 +69,14 @@ function Home() {
 
 
             {/* featured collections */}
-            <div className='row' id='feature'>
+            <div className='row pb-5' id='feature'>
                 <h1 className='about-heading mt-5'>Featured Collections</h1>
                 <div className='col-md-4'>
                     <div className="container">
                         <div className="mobile-layout">
                             <div className="actions">
                                 <i className="fas fa-chevron-left"></i>
-                          <Link to="/FyPdfsList"> <button type="button" class="view btn btn-success">VIEW ALL</button></Link> 
+                          <Link to="/FyPdfsList"> <button type="button" class="view btn btn-outline-warning">VIEW ALL</button></Link> 
                             </div>
                             <div className="book-cover">
                                 <img className="book-top"
@@ -104,7 +111,7 @@ function Home() {
 
                             <div className="actions">
                                 <i className="fas fa-chevron-left"></i>
-                                <Link to="/SyPdfsList"> <button type="button" class="view btn btn-success">VIEW ALL</button></Link> 
+                                <Link to="/SyPdfsList"> <button type="button" class="view btn btn-outline-warning">VIEW ALL</button></Link> 
                             </div>
                             <div className="book-cover">
                                 <img className="book-top"
@@ -137,7 +144,7 @@ function Home() {
 
                             <div className="actions">
                                 <i className="fas fa-chevron-left"></i>
-                                <Link to="/TyPdfsList"> <button type="button" class="view btn btn-success">VIEW ALL</button></Link> 
+                                <Link to="/TyPdfsList"> <button type="button" class="view btn btn-outline-warning">VIEW ALL</button></Link> 
                             </div>
                             <div className="book-cover">
                                 <img className="book-top"
@@ -184,7 +191,7 @@ function Home() {
             </div>
 
             {/* about-us */}
-            <div className='row about-us' id='About-us'>
+            <div className='row about-us ' id='About-us'>
                 <h1 className='about-heading'>About Us</h1>
                 <div className='col-md-4'>
                     <div className="wrapper">
