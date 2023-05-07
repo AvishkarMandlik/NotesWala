@@ -184,7 +184,7 @@ function Home() {
             </div>
 
             {/* about-us */}
-            <div className='row about-us'>
+            <div className='row about-us' id='About-us'>
                 <h1 className='about-heading'>About Us</h1>
                 <div className='col-md-4'>
                     <div className="wrapper">
