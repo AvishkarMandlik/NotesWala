@@ -63,7 +63,7 @@ function Signup() {
                 </div>
 
                 <div className='col-lg-6 mt-4 '>
-                    <div className='form-container '>
+                    <div className='form-container mb-4 '>
                         <span className='my-element display-5 '><img className='image-wel' src='https://thumbs.dreamstime.com/b/hand-book-logo-illustration-art-background-43965136.jpg' alt='' /> Welcome</span>
                         <form>
                             <div>
@@ -91,7 +91,7 @@ function Signup() {
                             </div>
 
                             <div>
-                                <button type='button' className='signup-button  mt-4' onClick={signupUser}>Signup 💨</button>
+                                <button type='button' className='signup-button btn btn-outline-warning  mt-4' onClick={signupUser}>Signup 💨</button>
                             </div>
                         </form>
                     </div>
