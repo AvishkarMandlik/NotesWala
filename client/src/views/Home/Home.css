@@ -65,7 +65,7 @@
     --transition: transform 0.7s ease-in-out;
 }
 
-.container {
+.features-container {
     min-height: 100vh;
     display: flex;
     flex-direction: column;

@@ -72,7 +72,7 @@ function Home() {
             <div className='row pb-5' id='feature'>
                 <h1 className='about-heading mt-5'>Featured Collections</h1>
                 <div className='col-md-4'>
-                    <div className="container">
+                    <div className="container features-container">
                         <div className="mobile-layout">
                             <div className="actions">
                                 <i className="fas fa-chevron-left"></i>
@@ -106,7 +106,7 @@ function Home() {
                     </div>
                 </div>
                 <div className='col-md-4'>
-                    <div className="container">
+                    <div className="container features-container">
                         <div className="mobile-layout">
 
                             <div className="actions">
@@ -139,7 +139,7 @@ function Home() {
                     </div>
                 </div>
                 <div className='col-md-4'>
-                    <div className="container">
+                    <div className="container features-container">
                         <div className="mobile-layout">
 
                             <div className="actions">
