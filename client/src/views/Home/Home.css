@@ -216,13 +216,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+/* body {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     background: #ecf0f3;
-}
+} */
 
 .about-us {
     display: flex;
