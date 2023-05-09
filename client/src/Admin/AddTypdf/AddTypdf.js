@@ -99,7 +99,7 @@ function AddTypdf() {
           }}
         />
         <div className="d-flex justify-content-center align-items-center">
-          <button className="btn btn-secondary" type="button" onClick={addPdf}>
+          <button className="btn add-pdf-btn" type="button" onClick={addPdf}>
             {" "}
             Add TY Pdf
           </button>
