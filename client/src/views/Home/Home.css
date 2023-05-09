@@ -12,7 +12,7 @@
 }
 
 .btn-wel {
-    background-color:  #ffd11a;
+    background-color: #ffd11a;
     color: black;
     width: 13rem;
     font-size: 1.5rem;
@@ -24,19 +24,77 @@
 
 
 /*landing image and division starts*/
-.landing-page{
-    width:60rem;
-    height:25rem;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
+.landing-page {
+    width: 89rem;
+    height: 25rem;
     box-shadow: 0 14px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     margin-bottom: 4rem;
+    margin-left: 2rem;
     border-radius: 2rem;
     margin-top: 1rem;
 }
-.landing-image{
+
+.landing-image {
     height: 20rem;
+}
+
+@media only screen and (max-width: 360px) {
+    .landing-page {
+        width: 20rem;
+        height: 39rem;
+    }
+
+    .landing-image {
+        height: 8rem;
+    }
+
+    .description-container {
+        width: 23rem;
+    }
+
+    .information-img {
+        width: 20rem;
+    }
+
+    .about-us-container {
+        padding: 0rem;
+        width: 8rem;
+    }
+
+    .about-us {
+        padding: 0rem;
+        width: 25rem;
+    }
+}
+
+/* For devices with width between 361px and 480px */
+@media only screen and (min-width: 361px) and (max-width: 480px) {
+    .landing-page {
+        width: 24rem;
+        height: 47rem;
+    }
+
+    .landing-image {
+        height: 13rem;
+    }
+
+    .description-container {
+        width: 27rem;
+    }
+
+    .information-img {
+        width: 25rem;
+    }
+
+    .about-us-container {
+        padding-left: 0rem;
+        width: 6rem;
+    }
+
+    .about-us {
+        padding: 0rem;
+        width: 25rem;
+    }
 }
 
 
@@ -191,16 +249,18 @@
 .view {
     border-radius: 0px;
     background-color: #ffccd9;
-    border:1px double black;
+    border: 1px double black;
     color: black;
 }
-
-
 
 .information-bot {
     color: black;
     font-family: 'Quicksand', sans-serif;
     font-size: larger;
+}
+
+.information-img {
+    height: 300px;
 }
 
 /*ends*/
@@ -224,13 +284,8 @@
     background: #ecf0f3;
 } */
 
-.about-us {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 3rem;
-    padding-top: 1rem;
-    padding-bottom:2rem ;
+.about-us-container {
+    padding-left: 5.5rem;
 }
 
 .about-heading {

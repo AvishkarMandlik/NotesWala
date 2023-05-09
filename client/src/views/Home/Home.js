@@ -9,10 +9,6 @@ import { Link } from 'react-router-dom';
 
 function Home() {
 
-
-   
-
-
     if (!currentUser) {
         window.location.href = './login'
     }
@@ -30,24 +26,26 @@ function Home() {
 
             {/* landing page */}
             
-            <div className='row landing-page pt-5'>
+            <div className='row landing-page p-4'>
                 <div className='col-md-6'>
                     <img className='landing-image' src="https://kit8.net/wp-content/uploads/2020/12/education@2x.png"  alt=''/>
                 </div>
                 <div className='col-md-6'>
-                    <h3>Who Are We ?</h3> <br></br>
-                    <span className='information-bot'>We are here to provide you Quality of notes for Quality Future and also helps you 
-                        for your Examinations and many competitive exams.
-                    </span> <br></br>
-                    <a href='#feature' ><button className='view  btn btn-outline-warning mt-5'>Collection ▶</button></a>
-                    <a href='#About-us' ><button className='view  btn btn-outline-warning mt-5 mx-5'>About-Us ▶</button></a>
+                    <h3>Who Are We ?</h3> 
+                    <p className='information-bot mb-5'>We are here to provide you 
+                    Quality of notes for Quality Future 
+                    and also helps you 
+                    for your Examinations and many competitive exams.
+                    </p> 
+                    <a href='#feature' ><button className='view btn btn-outline-warning m-2'>Collection ▶</button></a>
+                    <a href='#About-us' ><button className='view btn btn-outline-warning m-2'>About-Us ▶</button></a>
                 </div>
             </div>
 
 
             {/* description */}
-            <div className='row bg-light'>
-                <div className='col-md-6 pt-5 px-5'>
+            <div className='row bg-light description-container'>
+                <div className='col-md-6 p-5'>
                     <h2 className='about-heading'>Our Vision</h2>
                     <span className='information-bot'>We are provided previous question papers. <br></br>
                         You Can Practice M.C.Q. Questions As Well As Theory Questions For Your Examination.
@@ -55,7 +53,7 @@ function Home() {
                     <img className='mt-3' src="https://noteswala.online/wp-content/uploads/2022/06/kph-2.ico" alt=""></img> <br></br> <br></br>
                     <img className='mt-3' src="https://noteswala.online/wp-content/uploads/2022/06/kph-1.ico" alt=""></img>
                 </div>
-                <div className='col-md-6 pt-5 px-5'>
+                <div className='col-md-6 p-5'>
                     <h4>Notes For BCS</h4>
                     <h4><span className='colo'>100+</span> Questions For Operating System</h4>
                     <span className='information-bot'>You Can Get Free Previous Year Questions For Practice for your University examinations.</span> <br></br> <br></br>
@@ -177,7 +175,7 @@ function Home() {
 
             {/* information */}
 
-            <div className=' row vision bg-light'>
+            <div className='row bg-light'>
                 <div className='col-md-6 text-center px-5 pt-5'>
                     <h1 className='text-center about-heading'>Study Material For Your Examinations.</h1> <br></br>
                     <span className='information-bot'>Here You Can Get Free Notes Of All Courses All Subjects i.e Notes for BSC Computer Science,
@@ -186,14 +184,14 @@ function Home() {
                     </span>
                 </div>
                 <div className='col-md-6 text-center mt-5 mb-5'>
-                    <img src="https://img.freepik.com/free-vector/online-library-app-reading-banner_33099-1733.jpg" height="300px" alt=""></img>
+                    <img className='information-img' src="https://img.freepik.com/free-vector/online-library-app-reading-banner_33099-1733.jpg"  alt="The whole library png"/>
                 </div>
             </div>
 
             {/* about-us */}
-            <div className='row about-us ' id='About Us'>
+            <div className='row about-us-container' id='About Us'>
                 <h1 className='about-heading'>About Us</h1>
-                <div className='col-md-4'>
+                <div className='col-md-4 about-us '>
                     <div className="wrapper">
                         <div className="img-area">
                             <div className="inner-area">
@@ -211,7 +209,7 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className='col-md-4'>
+                <div className='col-md-4 about-us'>
                 <div className="wrapper">
                         <div className="img-area">
                             <div className="inner-area">
@@ -229,7 +227,7 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className='col-md-4'>
+                <div className='col-md-4 about-us'>
                 <div className="wrapper">
                         <div className="img-area">
                             <div className="inner-area">
