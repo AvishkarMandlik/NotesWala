@@ -26,25 +26,21 @@
 
 .login-button {
     font-size: 20px;
-    border-radius: 30px;
-    width: 220px;
+    border-radius: 0px;
+    width: 200px;
     color: white;
     cursor: pointer;
     margin: 10px;
     font-weight: 500;
     font-size: 22px;
-    border: 1px solid green;
-    background-color: green;
+    border: 1px solid black;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    background-color: #ffccd9;
+    color:#101110;
 }
 
-.login-button:hover {
-    background-color: orangered;
-    border: 1px solid orangered;
-    color: white;
-}
 
 .sticker {
     height: 140px;
@@ -59,18 +55,18 @@
     animation-duration: 2s;
 }
 
-.my-element {
+.my-elemen {
     font-weight: 540;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: green;
+    color: orangered;
     animation: bounce;
     animation-duration: 2s;
 }
 
-.lbl {
+.lbl-1 {
     font-size: 18px;
     font-family: sans-serif;
-    color: orangered;
+    color: black;
     margin-top: 1.8rem;
 }
 
@@ -85,8 +81,8 @@
     font-size: 20px;
 }
 
-.overlight {
-    color: #22c222;
+.overligh {
+    color: orangered;
     font-weight: bold;
 }
 

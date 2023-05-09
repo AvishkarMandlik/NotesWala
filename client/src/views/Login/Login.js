@@ -51,7 +51,7 @@ function Login() {
             <div className='row'>
                 <div className='col-lg-6 mt-5 '>
                     <div className='mx-5'>
-                        <h1 className='login-left-row-heading'>Own <span className='overlight'>NotesWala</span></h1>
+                        <h1 className='login-left-row-heading'>Own <span className='overligh'>NotesWala</span></h1>
                         <span className='description-left-row-log'>Thank You For Visiting  Our Website🧡 <br></br>
                             “The reading of all good books is like conversation with the finest (people) of the past centuries.” - Descartes</span>
                     </div>
@@ -60,24 +60,24 @@ function Login() {
 
                 <div className='col-lg-6 mt-4'>
                     <div className='form-container '>
-                        <span className='my-element display-5'><img className='image-wel' src='https://thumbs.dreamstime.com/b/hand-book-logo-illustration-art-background-43965136.jpg' alt='' /> Welcome</span>
+                        <span className='my-elemen display-5'><img className='image-wel' src='https://thumbs.dreamstime.com/b/hand-book-logo-illustration-art-background-43965136.jpg' alt='' /> Welcome</span>
                         <form>
 
                             <div>
-                                <label className='lbl' htmlFor='name'>Email :</label>
+                                <label className='lbl-1' htmlFor='name'>Email :</label>
                                 <input type='email' id='email' placeholder='Enter Email' className='user-input'
                                     value={email} onChange={(e) => setEmail(e.target.value)} />
                             </div>
 
 
                             <div>
-                                <label className='lbl' htmlFor='name'>Password :</label>
+                                <label className='lbl-1' htmlFor='name'>Password :</label>
                                 <input type='password' id='password' placeholder='Enter Password' className='user-input'
                                     value={password} onChange={(e) => setPassword(e.target.value)} />
                             </div>
 
                             <div>
-                                <button type='button' className='login-button  mt-4' onClick={loginUser}>Login 💨</button>
+                                <button type='button' className='login-button btn btn-outline-warning  mt-4' onClick={loginUser}>Login 💨</button>
                             </div>
 
                             <div className="not-signup-btn-container">
