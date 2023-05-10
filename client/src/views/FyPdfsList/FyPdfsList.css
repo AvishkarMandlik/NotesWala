@@ -29,3 +29,28 @@
     margin: 0 auto;
     margin-top: 20px;
 }
+
+@media only screen and (max-width: 360px) {
+  .input-search{
+    margin: 5px;
+    min-width: 300px;
+    padding: 5px;
+  }
+}
+
+/* For devices with width between 361px and 480px */
+@media only screen and (min-width: 361px) and (max-width: 480px) {
+  .input-search{
+    margin: 5px;
+    min-width: 300px;
+    padding: 5px;
+  }
+}
+
+/* For devices with width between 481px and 640px */
+@media only screen and (min-width: 481px) and (max-width: 640px) {
+  .input-search{
+    margin: 5px;
+    min-width: 500px;
+    padding: 5px;
+  }}
