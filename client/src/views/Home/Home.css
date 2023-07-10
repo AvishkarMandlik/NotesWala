@@ -68,7 +68,7 @@
 }
 
 /* For devices with width between 361px and 480px */
-@media only screen and (min-width: 361px) and (max-width: 480px) {
+@media only screen and (min-width: 361px) and (max-width: 520px) {
     .landing-page {
         width: 24rem;
         height: 47rem;
@@ -114,7 +114,7 @@
     --mobile-height: 670px;
     --mobile-radius: 25px;
     --separator-height: 500px;
-
+    overflow-x: hidden;
     --bg: #fdf3f2;
     --mobile-bg: #e6ffe6;
     --intro-bg: #d9ffcc;
