@@ -1,6 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
+import validator from 'validator';
 import path from 'path';
 const __dirname = path.resolve();
 dotenv.config();
@@ -25,6 +26,32 @@ mongoose.connect(process.env.MONGODB_URL, ()=>{
 // signup api starts here
 app.post('/signup', async (req, res) => {
     const { name, phone, email, password, role } = req.body;
+    if(!validator.isEmail(email))
+
+    {
+        return res.json({
+            success: false,
+            message: "Please Enter a valid Email Id",
+            
+        })
+    } 
+if(!validator.isMobilePhone(phone))
+    {
+        return res.json({
+            success: false,
+            message: "Mobile Number must contain 10 digits",
+            
+        })
+    }
+
+
+//   if(!validator.isStrongPassword(password))
+//     {
+//       return res.json({
+//           success: false,
+//           message: "Password contains A-Z,0-9 ,a-z, @"
+//       })
+//     }
 
 // validation to check if all fields are filled starts here
     const emptyFields = [];
