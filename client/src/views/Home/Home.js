@@ -38,7 +38,7 @@ function Home() {
                     for your Examinations and many competitive exams.
                     </p> 
                     <a href='#feature' ><button className='view btn btn-outline-warning m-2'>Collection ▶</button></a>
-                    <a href='#About-us' ><button className='view btn btn-outline-warning m-2'>About-Us ▶</button></a>
+                    <a href='#about-us' ><button className='view btn btn-outline-warning m-2'>About-Us ▶</button></a>
                 </div>
             </div>
 
@@ -189,7 +189,7 @@ function Home() {
             </div>
 
             {/* about-us */}
-            <div className='row about-us-container' id='About Us'>
+            <div className='row about-us-container' id='about-us'>
                 <h1 className='about-heading'>About Us</h1>
                 <div className='col-md-4 about-us '>
                     <div className="wrapper">
