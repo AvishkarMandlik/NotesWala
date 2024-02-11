@@ -14,19 +14,19 @@ function Admin() {
       <div className="title-container">
       <Navbar/>
      </div>
-      <div class="container">
+      <div className="container">
         <div className="dashboard-heading">
         <h1 className="text-center ">Welcome, to Control Panel {currentUser?.name}!</h1>
         </div>
-        <div class="row">
-          <div class="col-md-4 mb-5">
-            <div class="card-body">{<AddFypdf />}</div>
+        <div className="row">
+          <div className="col-md-4 mb-5">
+            <div className="card-body">{<AddFypdf />}</div>
           </div>
-          <div class="col-md-4 mb-5">
-            <div class="card-body">{<AddSypdf />}</div>
+          <div className="col-md-4 mb-5">
+            <div className="card-body">{<AddSypdf />}</div>
           </div>
-          <div class="col-md-4 mb-5">
-            <div class="card-body">{<AddTypdf />}</div>
+          <div className="col-md-4 mb-5">
+            <div className="card-body">{<AddTypdf />}</div>
           </div>
         </div>
       </div>
