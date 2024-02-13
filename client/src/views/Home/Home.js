@@ -74,7 +74,7 @@ function Home() {
                         <div className="mobile-layout">
                             <div className="actions">
                                 <i className="fas fa-chevron-left"></i>
-                          <Link to="/FyPdfsList"> <button type="button" class="view btn btn-outline-warning">VIEW ALL</button></Link> 
+                          <Link to="/FyPdfsList"> <button type="button" className="view btn btn-outline-warning">VIEW ALL</button></Link> 
                             </div>
                             <div className="book-cover">
                                 <img className="book-top"
@@ -109,7 +109,7 @@ function Home() {
 
                             <div className="actions">
                                 <i className="fas fa-chevron-left"></i>
-                                <Link to="/SyPdfsList"> <button type="button" class="view btn btn-outline-warning">VIEW ALL</button></Link> 
+                                <Link to="/SyPdfsList"> <button type="button" className="view btn btn-outline-warning">VIEW ALL</button></Link> 
                             </div>
                             <div className="book-cover">
                                 <img className="book-top"
@@ -142,7 +142,7 @@ function Home() {
 
                             <div className="actions">
                                 <i className="fas fa-chevron-left"></i>
-                                <Link to="/TyPdfsList"> <button type="button" class="view btn btn-outline-warning">VIEW ALL</button></Link> 
+                                <Link to="/TyPdfsList"> <button type="button" className="view btn btn-outline-warning">VIEW ALL</button></Link> 
                             </div>
                             <div className="book-cover">
                                 <img className="book-top"
