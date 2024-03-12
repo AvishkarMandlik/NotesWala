@@ -45,13 +45,13 @@ if(!validator.isMobilePhone(phone))
     }
 
 
-//   if(!validator.isStrongPassword(password))
-//     {
-//       return res.json({
-//           success: false,
-//           message: "Password contains A-Z,0-9 ,a-z, @"
-//       })
-//     }
+  if(!validator.isStrongPassword(password))
+    {
+      return res.json({
+          success: false,
+          message: "Password contains A-Z,0-9 ,a-z, @"
+      })
+    }
 
 // validation to check if all fields are filled starts here
     const emptyFields = [];
