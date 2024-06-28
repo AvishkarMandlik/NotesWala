@@ -18,10 +18,13 @@ app.use(express.json());
 const PORT = process.env.PORT || 5000;
 mongoose.set("strictQuery", true);
 
-mongoose.connect(process.env.MONGODB_URL, ()=>{
+mongoose.connect(process.env.MONGODB_URL)
+ .then(() => {
     console.log('Connected to MongoDB');
-})
-
+  })
+ .catch((error) => {
+    console.error('Error connecting to MongoDB:', error);
+  });
 
 // api routes starts here
 // signup api starts here
