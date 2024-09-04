@@ -121,8 +121,14 @@ app.post('/login', async (req, res) => {
             message: "Email and password are required"
         })
     }
-
-    const existingUser = await User.findOne({ email: email, password: password });
+    try{
+        const existingUser = await User.findOne({ email: email, password: password });
+    }catch(err){
+        return res.json({
+            success: false,
+            message: "This is login portion error: "+ err
+        })
+    }
     
     if(existingUser){
         return res.json({
