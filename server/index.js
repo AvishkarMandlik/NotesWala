@@ -50,7 +50,7 @@ if(!validator.isMobilePhone(phone))
     {
       return res.json({
           success: false,
-          message: "Password contains A-Z,0-9 ,a-z, @"
+          message: "Password must contain A-Z,0-9 ,a-z, @"
       })
     }
 
