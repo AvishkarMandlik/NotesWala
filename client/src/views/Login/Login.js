@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 function Login() {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const [passwordVisible, setPasswordVisible] = useState(false)
 
     useEffect(() => {
         if (currentUser) {
@@ -47,7 +48,6 @@ function Login() {
 
     return (
         <div>
-
             <div className='row'>
                 <div className='col-lg-6 mt-5 '>
                     <div className='mx-5'>
@@ -69,12 +69,16 @@ function Login() {
                                     value={email} onChange={(e) => setEmail(e.target.value)} />
                             </div>
 
-
                             <div>
-                                <label className='lbl-1' htmlFor='name'>Password :</label>
-                                <input type='password' id='password' placeholder='Enter Password' className='user-input'
-                                    value={password} onChange={(e) => setPassword(e.target.value)} />
+                                <label className='lbl-1' htmlFor='password'>Password:</label>
+                                <div className='password-input-container'>
+                                    <input type={passwordVisible ? 'text' : 'password'} id='password' placeholder='Enter Password' className='user-input' value={password} onChange={(e) => setPassword(e.target.value)} />
+                                    <button type='button' className='show-password-btn' onClick={() => setPasswordVisible(!passwordVisible)} >
+                                        {passwordVisible ? <i className="fas fa-eye-slash"></i> : <i className="fas fa-eye"></i>}
+                                    </button>
+                                </div>
                             </div>
+
 
                             <div>
                                 <button type='button' className='login-button btn btn-outline-warning  mt-4' onClick={loginUser}>Login 💨</button>

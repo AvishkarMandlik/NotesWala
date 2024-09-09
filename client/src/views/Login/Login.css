@@ -13,15 +13,35 @@
     color: #101110;
 }
 
-.user-input {
-    display: block;
+.password-input-container {
+    position: relative;
     width: 300px;
-    border-radius: 8px;
-    border: 1px solid grey;
-    font-size: 18px;
+}
 
-    padding-left: 10px;
-    border: 2.8px solid darkgreen;
+.user-input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px; 
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.show-password-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 16px;
+}
+
+.show-password-btn i {
+    font-size: 16px;
 }
 
 .login-button {
