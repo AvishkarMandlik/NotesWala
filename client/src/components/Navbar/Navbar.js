@@ -27,7 +27,7 @@ function Navbar() {
           <Link class="nav-link" to="/Admin">Dashboard</Link>
         </li>
         <li>
-          <a href="#About Us" class="nav-link" >About Us</a>
+          <a href="#about-us" class="nav-link" >About Us</a>
         </li>
         <li class="nav-item dropdown">
           <Link class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -37,6 +37,7 @@ function Navbar() {
             <li><Link to="/FyPdfsList" class="dropdown-item" >FyPdfsList</Link></li>
             <li><Link to="/SyPdfsList" class="dropdown-item">SyPdfsList</Link></li>
             <li><Link to="/TyPdfsList" class="dropdown-item" >TyPdfsList</Link></li>
+            <li><Link to="/TyPdfsList" class="dropdown-item" >FyMcsPdfsList</Link></li>
           </ul>
         </li>
       </ul>
